@@ -12,6 +12,12 @@ import UIKit
 {
   
     @IBInspectable var filename: String = ""
+    
+    private var pdf: CGPDFDocument?
+    private var page: CGPDFPage?
+
+    private var numberOfPages: size_t = 0
+    private var currentPage: size_t = 1
 
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -30,17 +36,14 @@ import UIKit
             return
         }
         
-        let pdf: CGPDFDocument = CGPDFDocumentCreateWithURL(pdfURL)!
-        let numberOfPage: size_t = CGPDFDocumentGetNumberOfPages(pdf)
+        self.pdf = CGPDFDocumentCreateWithURL(pdfURL)
+        self.numberOfPages = CGPDFDocumentGetNumberOfPages(self.pdf!)
         
         //	Drawing goes in here...
-        debugPrint("\(__FUNCTION__):  number of pages: \(numberOfPage)")
+        debugPrint("\(__FUNCTION__):  number of pages: \(self.numberOfPages)")
         
-        let page: CGPDFPage? = CGPDFDocumentGetPage(pdf, 1)
+        self.page = CGPDFDocumentGetPage(self.pdf, self.currentPage)
         
-        //let rect: CGRect = CGRectMake(0.0, 0.0, 300.0, 300.0)
-        
-        //UIGraphicsBeginImageContext(rect.size)
         let currentContext: CGContext? = UIGraphicsGetCurrentContext()
         
         if (currentContext != nil)
@@ -66,9 +69,7 @@ import UIKit
             CGContextDrawPDFPage(currentContext!, page)
             
         }
-        
-       // UIGraphicsEndImageContext()
-        
+
     }
     
     override func prepareForInterfaceBuilder()
@@ -78,5 +79,41 @@ import UIKit
         let projectSourceDirectories: String = environment["IB_PROJECT_SOURCE_DIRECTORIES"]!
         
         debugPrint("\(__FUNCTION__):  projectSourceDirectories: \(projectSourceDirectories)")
+    }
+    
+    override func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool
+    {
+        if (gestureRecognizer .isKindOfClass(UISwipeGestureRecognizer) == true)
+        {
+            let swipeGestureRecognizer: UISwipeGestureRecognizer = gestureRecognizer as! UISwipeGestureRecognizer
+            
+            if (swipeGestureRecognizer.direction == .Left)
+            {
+                self.currentPage++
+                
+                if (self.currentPage > self.numberOfPages)
+                {
+                    self.currentPage = self.numberOfPages
+                }
+                
+                self.page = CGPDFDocumentGetPage(self.pdf, self.currentPage)
+                self.setNeedsDisplay()
+            }
+            else if (swipeGestureRecognizer.direction == .Right)
+            {
+                self.currentPage--
+                
+                if (self.currentPage < 1)
+                {
+                    self.currentPage = 1
+                }
+                
+                self.page = CGPDFDocumentGetPage(self.pdf, self.currentPage)
+                self.setNeedsDisplay()
+
+            }
+        }
+        
+        return true
     }
 }

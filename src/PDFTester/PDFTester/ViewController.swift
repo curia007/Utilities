@@ -31,19 +31,7 @@ class ViewController: UIViewController
 
         
     }
-    
-    // MARK: - Action methods
-    
-    @IBAction func handleLeftSwipeAction(sender: AnyObject)
-    {
         
-    }
-    
-    @IBAction func handleRightSwipeAction(sender: AnyObject)
-    {
-        
-    }
-    
     // MARK: - private methods
     
     private func createPDF()
