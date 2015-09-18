@@ -19,6 +19,8 @@ import UIKit
     private var numberOfPages: size_t = 0
     private var currentPage: size_t = 1
 
+    private var scale: CGFloat = 0.0
+    
     required init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
@@ -33,6 +35,9 @@ import UIKit
         self.addGestureRecognizer(leftSwipeGestureRecognier)
         self.addGestureRecognizer(rightSwipeGestureRecognier)
         
+        // add UIPinchGestureRecognizers
+        let pinchGestureRecognizer: UIPinchGestureRecognizer = UIPinchGestureRecognizer()
+        self.addGestureRecognizer(pinchGestureRecognizer)
     }
     
     // Only override drawRect: if you perform custom drawing.
@@ -128,6 +133,17 @@ import UIKit
                 self.setNeedsDisplay()
 
             }
+        }
+        else if (gestureRecognizer .isKindOfClass(UIPinchGestureRecognizer) == true)
+        {
+            let pinchGestureRecongizer: UIPinchGestureRecognizer = gestureRecognizer as! UIPinchGestureRecognizer
+            
+            self.scale = pinchGestureRecongizer.scale
+            
+            let transform: CGAffineTransform = CGAffineTransformScale(self.transform, self.scale, self.scale)
+            self.transform = transform;
+
+            
         }
         
         return true
