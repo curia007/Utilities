@@ -21,10 +21,6 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="filename" value="iOS_Simulator_Guide"/>
                         </userDefinedRuntimeAttributes>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="u24-we-YwV" appends="YES" id="4O2-qe-3jF"/>
-                            <outletCollection property="gestureRecognizers" destination="CYO-IE-g5G" appends="YES" id="Qf1-2i-4fh"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

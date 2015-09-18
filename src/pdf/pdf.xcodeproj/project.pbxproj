@@ -10,7 +10,7 @@
 		C05917D91BA9F2740043F2F3 /* pdf.h in Headers */ = {isa = PBXBuildFile; fileRef = C05917D81BA9F2740043F2F3 /* pdf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C05917E01BA9F2740043F2F3 /* pdf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05917D51BA9F2740043F2F3 /* pdf.framework */; settings = {ASSET_TAGS = (); }; };
 		C05917E51BA9F2740043F2F3 /* pdfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05917E41BA9F2740043F2F3 /* pdfTests.swift */; };
-		C07129681BAC4B1100930BD2 /* PDFViewFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07129671BAC4B1100930BD2 /* PDFViewFramework.swift */; settings = {ASSET_TAGS = (); }; };
+		C07129681BAC4B1100930BD2 /* PDFView_bad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07129671BAC4B1100930BD2 /* PDFView_bad.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		C05917DF1BA9F2740043F2F3 /* pdfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pdfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05917E41BA9F2740043F2F3 /* pdfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfTests.swift; sourceTree = "<group>"; };
 		C05917E61BA9F2740043F2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C07129671BAC4B1100930BD2 /* PDFViewFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFViewFramework.swift; path = views/PDFViewFramework.swift; sourceTree = "<group>"; };
+		C07129671BAC4B1100930BD2 /* PDFView_bad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFView_bad.swift; path = views/PDFView_bad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		C07129661BAC4AF200930BD2 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				C07129671BAC4B1100930BD2 /* PDFViewFramework.swift */,
+				C07129671BAC4B1100930BD2 /* PDFView_bad.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07129681BAC4B1100930BD2 /* PDFViewFramework.swift in Sources */,
+				C07129681BAC4B1100930BD2 /* PDFView_bad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
