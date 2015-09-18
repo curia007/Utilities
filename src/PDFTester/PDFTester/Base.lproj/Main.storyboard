@@ -19,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="filename" value="document"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="filename" value="iOS_Simulator_Guide"/>
                         </userDefinedRuntimeAttributes>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="gBY-uI-Y7d" appends="YES" id="aHV-uU-dbI"/>
