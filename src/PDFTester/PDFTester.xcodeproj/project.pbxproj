@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C05917FC1BA9F97F0043F2F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05917FB1BA9F97F0043F2F3 /* AppDelegate.swift */; };
+		C05917FE1BA9F97F0043F2F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05917FD1BA9F97F0043F2F3 /* ViewController.swift */; };
+		C05918011BA9F97F0043F2F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05917FF1BA9F97F0043F2F3 /* Main.storyboard */; };
+		C05918041BA9F97F0043F2F3 /* PDFTester.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C05918021BA9F97F0043F2F3 /* PDFTester.xcdatamodeld */; };
+		C05918061BA9F97F0043F2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05918051BA9F97F0043F2F3 /* Assets.xcassets */; };
+		C05918091BA9F97F0043F2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05918071BA9F97F0043F2F3 /* LaunchScreen.storyboard */; };
+		C05918141BA9F97F0043F2F3 /* PDFTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05918131BA9F97F0043F2F3 /* PDFTesterTests.swift */; };
+		C059181F1BA9F97F0043F2F3 /* PDFTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059181E1BA9F97F0043F2F3 /* PDFTesterUITests.swift */; };
+		C071296C1BAC5AA800930BD2 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071296B1BAC5AA800930BD2 /* PDFView.swift */; settings = {ASSET_TAGS = (); }; };
+		C071296E1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C071296D1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf */; settings = {ASSET_TAGS = (); }; };
+		C0944D071BAA17B800804E75 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0944D061BAA17B800804E75 /* GraphicView.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C05918101BA9F97F0043F2F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05917F01BA9F97F0043F2F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C05917F71BA9F97F0043F2F3;
+			remoteInfo = PDFTester;
+		};
+		C059181B1BA9F97F0043F2F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05917F01BA9F97F0043F2F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C05917F71BA9F97F0043F2F3;
+			remoteInfo = PDFTester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C05917F81BA9F97F0043F2F3 /* PDFTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05917FB1BA9F97F0043F2F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C05917FD1BA9F97F0043F2F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C05918001BA9F97F0043F2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C05918031BA9F97F0043F2F3 /* PDFTester.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PDFTester.xcdatamodel; sourceTree = "<group>"; };
+		C05918051BA9F97F0043F2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C05918081BA9F97F0043F2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C059180A1BA9F97F0043F2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C059180F1BA9F97F0043F2F3 /* PDFTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05918131BA9F97F0043F2F3 /* PDFTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTesterTests.swift; sourceTree = "<group>"; };
+		C05918151BA9F97F0043F2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C059181A1BA9F97F0043F2F3 /* PDFTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C059181E1BA9F97F0043F2F3 /* PDFTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFTesterUITests.swift; sourceTree = "<group>"; };
+		C05918201BA9F97F0043F2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C071296B1BAC5AA800930BD2 /* PDFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDFView.swift; path = views/PDFView.swift; sourceTree = "<group>"; };
+		C071296D1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = iOS_Simulator_Guide.pdf; path = media/iOS_Simulator_Guide.pdf; sourceTree = "<group>"; };
+		C0944D061BAA17B800804E75 /* GraphicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C05917F51BA9F97F0043F2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C059180C1BA9F97F0043F2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05918171BA9F97F0043F2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C02497F71BAB0FFB00C04F5B /* documents */ = {
+			isa = PBXGroup;
+			children = (
+				C071296D1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf */,
+			);
+			name = documents;
+			sourceTree = "<group>";
+		};
+		C05917EF1BA9F97F0043F2F3 = {
+			isa = PBXGroup;
+			children = (
+				C05917FA1BA9F97F0043F2F3 /* PDFTester */,
+				C05918121BA9F97F0043F2F3 /* PDFTesterTests */,
+				C059181D1BA9F97F0043F2F3 /* PDFTesterUITests */,
+				C05917F91BA9F97F0043F2F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C05917F91BA9F97F0043F2F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C05917F81BA9F97F0043F2F3 /* PDFTester.app */,
+				C059180F1BA9F97F0043F2F3 /* PDFTesterTests.xctest */,
+				C059181A1BA9F97F0043F2F3 /* PDFTesterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C05917FA1BA9F97F0043F2F3 /* PDFTester */ = {
+			isa = PBXGroup;
+			children = (
+				C071296A1BAC5A1B00930BD2 /* views */,
+				C02497F71BAB0FFB00C04F5B /* documents */,
+				C05917FB1BA9F97F0043F2F3 /* AppDelegate.swift */,
+				C05917FD1BA9F97F0043F2F3 /* ViewController.swift */,
+				C05917FF1BA9F97F0043F2F3 /* Main.storyboard */,
+				C05918051BA9F97F0043F2F3 /* Assets.xcassets */,
+				C05918071BA9F97F0043F2F3 /* LaunchScreen.storyboard */,
+				C059180A1BA9F97F0043F2F3 /* Info.plist */,
+				C05918021BA9F97F0043F2F3 /* PDFTester.xcdatamodeld */,
+				C0944D061BAA17B800804E75 /* GraphicView.swift */,
+			);
+			path = PDFTester;
+			sourceTree = "<group>";
+		};
+		C05918121BA9F97F0043F2F3 /* PDFTesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C05918131BA9F97F0043F2F3 /* PDFTesterTests.swift */,
+				C05918151BA9F97F0043F2F3 /* Info.plist */,
+			);
+			path = PDFTesterTests;
+			sourceTree = "<group>";
+		};
+		C059181D1BA9F97F0043F2F3 /* PDFTesterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C059181E1BA9F97F0043F2F3 /* PDFTesterUITests.swift */,
+				C05918201BA9F97F0043F2F3 /* Info.plist */,
+			);
+			path = PDFTesterUITests;
+			sourceTree = "<group>";
+		};
+		C071296A1BAC5A1B00930BD2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C071296B1BAC5AA800930BD2 /* PDFView.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C05917F71BA9F97F0043F2F3 /* PDFTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05918231BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTester" */;
+			buildPhases = (
+				C05917F41BA9F97F0043F2F3 /* Sources */,
+				C05917F51BA9F97F0043F2F3 /* Frameworks */,
+				C05917F61BA9F97F0043F2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFTester;
+			productName = PDFTester;
+			productReference = C05917F81BA9F97F0043F2F3 /* PDFTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C059180E1BA9F97F0043F2F3 /* PDFTesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05918261BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTesterTests" */;
+			buildPhases = (
+				C059180B1BA9F97F0043F2F3 /* Sources */,
+				C059180C1BA9F97F0043F2F3 /* Frameworks */,
+				C059180D1BA9F97F0043F2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C05918111BA9F97F0043F2F3 /* PBXTargetDependency */,
+			);
+			name = PDFTesterTests;
+			productName = PDFTesterTests;
+			productReference = C059180F1BA9F97F0043F2F3 /* PDFTesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C05918191BA9F97F0043F2F3 /* PDFTesterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05918291BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTesterUITests" */;
+			buildPhases = (
+				C05918161BA9F97F0043F2F3 /* Sources */,
+				C05918171BA9F97F0043F2F3 /* Frameworks */,
+				C05918181BA9F97F0043F2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C059181C1BA9F97F0043F2F3 /* PBXTargetDependency */,
+			);
+			name = PDFTesterUITests;
+			productName = PDFTesterUITests;
+			productReference = C059181A1BA9F97F0043F2F3 /* PDFTesterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C05917F01BA9F97F0043F2F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Carmelo I. Uria";
+				TargetAttributes = {
+					C05917F71BA9F97F0043F2F3 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					C059180E1BA9F97F0043F2F3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C05917F71BA9F97F0043F2F3;
+					};
+					C05918191BA9F97F0043F2F3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C05917F71BA9F97F0043F2F3;
+					};
+				};
+			};
+			buildConfigurationList = C05917F31BA9F97F0043F2F3 /* Build configuration list for PBXProject "PDFTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C05917EF1BA9F97F0043F2F3;
+			productRefGroup = C05917F91BA9F97F0043F2F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C05917F71BA9F97F0043F2F3 /* PDFTester */,
+				C059180E1BA9F97F0043F2F3 /* PDFTesterTests */,
+				C05918191BA9F97F0043F2F3 /* PDFTesterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C05917F61BA9F97F0043F2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05918091BA9F97F0043F2F3 /* LaunchScreen.storyboard in Resources */,
+				C05918061BA9F97F0043F2F3 /* Assets.xcassets in Resources */,
+				C071296E1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf in Resources */,
+				C05918011BA9F97F0043F2F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C059180D1BA9F97F0043F2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05918181BA9F97F0043F2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C05917F41BA9F97F0043F2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05918041BA9F97F0043F2F3 /* PDFTester.xcdatamodeld in Sources */,
+				C0944D071BAA17B800804E75 /* GraphicView.swift in Sources */,
+				C05917FE1BA9F97F0043F2F3 /* ViewController.swift in Sources */,
+				C071296C1BAC5AA800930BD2 /* PDFView.swift in Sources */,
+				C05917FC1BA9F97F0043F2F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C059180B1BA9F97F0043F2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05918141BA9F97F0043F2F3 /* PDFTesterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05918161BA9F97F0043F2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C059181F1BA9F97F0043F2F3 /* PDFTesterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C05918111BA9F97F0043F2F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C05917F71BA9F97F0043F2F3 /* PDFTester */;
+			targetProxy = C05918101BA9F97F0043F2F3 /* PBXContainerItemProxy */;
+		};
+		C059181C1BA9F97F0043F2F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C05917F71BA9F97F0043F2F3 /* PDFTester */;
+			targetProxy = C059181B1BA9F97F0043F2F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C05917FF1BA9F97F0043F2F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C05918001BA9F97F0043F2F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C05918071BA9F97F0043F2F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C05918081BA9F97F0043F2F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05918211BA9F97F0043F2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C05918221BA9F97F0043F2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C05918241BA9F97F0043F2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PDFTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C05918251BA9F97F0043F2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PDFTester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C05918271BA9F97F0043F2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PDFTesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFTester.app/PDFTester";
+			};
+			name = Debug;
+		};
+		C05918281BA9F97F0043F2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PDFTesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFTester.app/PDFTester";
+			};
+			name = Release;
+		};
+		C059182A1BA9F97F0043F2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PDFTesterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTesterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PDFTester;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C059182B1BA9F97F0043F2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PDFTesterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmelouria.PDFTesterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PDFTester;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05917F31BA9F97F0043F2F3 /* Build configuration list for PBXProject "PDFTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05918211BA9F97F0043F2F3 /* Debug */,
+				C05918221BA9F97F0043F2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05918231BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05918241BA9F97F0043F2F3 /* Debug */,
+				C05918251BA9F97F0043F2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05918261BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05918271BA9F97F0043F2F3 /* Debug */,
+				C05918281BA9F97F0043F2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05918291BA9F97F0043F2F3 /* Build configuration list for PBXNativeTarget "PDFTesterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C059182A1BA9F97F0043F2F3 /* Debug */,
+				C059182B1BA9F97F0043F2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C05918021BA9F97F0043F2F3 /* PDFTester.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C05918031BA9F97F0043F2F3 /* PDFTester.xcdatamodel */,
+			);
+			currentVersion = C05918031BA9F97F0043F2F3 /* PDFTester.xcdatamodel */;
+			path = PDFTester.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C05917F01BA9F97F0043F2F3 /* Project object */;
+}
