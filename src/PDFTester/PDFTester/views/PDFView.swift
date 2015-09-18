@@ -19,6 +19,22 @@ import UIKit
     private var numberOfPages: size_t = 0
     private var currentPage: size_t = 1
 
+    required init?(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)
+        
+        // add UISwipeGestureRecognizers
+        let leftSwipeGestureRecognier: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
+        leftSwipeGestureRecognier.direction = .Left
+
+        let rightSwipeGestureRecognier: UISwipeGestureRecognizer = UISwipeGestureRecognizer()
+        rightSwipeGestureRecognier.direction = .Right
+
+        self.addGestureRecognizer(leftSwipeGestureRecognier)
+        self.addGestureRecognizer(rightSwipeGestureRecognier)
+        
+    }
+    
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect)
