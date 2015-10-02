@@ -11,7 +11,7 @@ import UIKit
 import LocalAuthentication
 import Security
 
-class LoginViewController: UIViewController
+public class LoginViewController: UIViewController
 {
 
     private var willCreateKeychain:Bool = false
