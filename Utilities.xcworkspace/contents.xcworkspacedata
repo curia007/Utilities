@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TouchId/TouchId.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:src/PDFTester/PDFTester.xcodeproj">
    </FileRef>
    <FileRef

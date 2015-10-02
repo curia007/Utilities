@@ -15,9 +15,9 @@
 		C05918091BA9F97F0043F2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05918071BA9F97F0043F2F3 /* LaunchScreen.storyboard */; };
 		C05918141BA9F97F0043F2F3 /* PDFTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05918131BA9F97F0043F2F3 /* PDFTesterTests.swift */; };
 		C059181F1BA9F97F0043F2F3 /* PDFTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059181E1BA9F97F0043F2F3 /* PDFTesterUITests.swift */; };
-		C071296C1BAC5AA800930BD2 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071296B1BAC5AA800930BD2 /* PDFView.swift */; settings = {ASSET_TAGS = (); }; };
-		C071296E1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C071296D1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf */; settings = {ASSET_TAGS = (); }; };
-		C0944D071BAA17B800804E75 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0944D061BAA17B800804E75 /* GraphicView.swift */; settings = {ASSET_TAGS = (); }; };
+		C071296C1BAC5AA800930BD2 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071296B1BAC5AA800930BD2 /* PDFView.swift */; };
+		C071296E1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C071296D1BAC66A700930BD2 /* iOS_Simulator_Guide.pdf */; };
+		C0944D071BAA17B800804E75 /* GraphicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0944D061BAA17B800804E75 /* GraphicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +215,7 @@
 		C05917F01BA9F97F0043F2F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Carmelo I. Uria";
 				TargetAttributes = {
