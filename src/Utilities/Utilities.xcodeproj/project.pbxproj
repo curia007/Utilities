@@ -11,6 +11,7 @@
 		C061AD881BD6B84900D5FE60 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C061AD7D1BD6B84900D5FE60 /* Utilities.framework */; };
 		C061AD8D1BD6B84900D5FE60 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061AD8C1BD6B84900D5FE60 /* UtilitiesTests.swift */; };
 		C061ADA21BD6BB4000D5FE60 /* modelProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061ADA11BD6BB4000D5FE60 /* modelProcessor.swift */; };
+		C09710411BD8482C00246042 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09710401BD8482C00246042 /* CameraViewController.swift */; };
 		C0A954041BD6F09A00E5B3DD /* ModelProcessorException.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A954031BD6F09A00E5B3DD /* ModelProcessorException.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		C061AD8C1BD6B84900D5FE60 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		C061AD8E1BD6B84900D5FE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C061ADA11BD6BB4000D5FE60 /* modelProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = modelProcessor.swift; path = coreData/modelProcessor.swift; sourceTree = "<group>"; };
+		C09710401BD8482C00246042 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = camera/CameraViewController.swift; sourceTree = "<group>"; };
 		C0A954031BD6F09A00E5B3DD /* ModelProcessorException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelProcessorException.swift; path = exceptions/ModelProcessorException.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		C061AD7F1BD6B84900D5FE60 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C097103F1BD8478F00246042 /* Camera */,
 				C0A954021BD6F03200E5B3DD /* Exceptions */,
 				C061ADA01BD6B8F000D5FE60 /* Core Data */,
 				C061AD801BD6B84900D5FE60 /* Utilities.h */,
@@ -98,6 +101,14 @@
 				C061ADA11BD6BB4000D5FE60 /* modelProcessor.swift */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		C097103F1BD8478F00246042 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				C09710401BD8482C00246042 /* CameraViewController.swift */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 		C0A954021BD6F03200E5B3DD /* Exceptions */ = {
@@ -218,6 +229,7 @@
 			files = (
 				C0A954041BD6F09A00E5B3DD /* ModelProcessorException.swift in Sources */,
 				C061ADA21BD6BB4000D5FE60 /* modelProcessor.swift in Sources */,
+				C09710411BD8482C00246042 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
