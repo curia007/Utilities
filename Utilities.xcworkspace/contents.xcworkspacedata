@@ -2,7 +2,11 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:src/Utilities/Utilities.xcodeproj">
+=======
+      location = "group:TouchId/TouchId.xcodeproj">
+>>>>>>> eacf3f87d92a07c6c1447525489dac614061c963
    </FileRef>
    <FileRef
       location = "group:src/PDFTester/PDFTester.xcodeproj">
