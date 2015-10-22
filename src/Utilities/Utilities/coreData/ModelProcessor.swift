@@ -1,6 +1,6 @@
 //
-//  modelProcessor.swift
-//  pdf
+//  ModelProcessor.swift
+//  Utilities
 //
 //  Created by Carmelo I. Uria on 10/20/15.
 //  Copyright © 2015 Carmelo I. Uria. All rights reserved.
@@ -12,6 +12,23 @@ import CoreData
 
 public class ModelProcessor
 {
+
+    public init()
+    {
+        
+    }
+    
+    public func retrieve(table: String, managedObjectContext: NSManagedObjectContext) throws -> [AnyObject]
+    {
+        let fetchRequest: NSFetchRequest = NSFetchRequest(entityName: table)
+        
+        var entities: [AnyObject] = []
+        
+        entities = try managedObjectContext.executeFetchRequest(fetchRequest)
+       
+        return entities
+    }
+    
     public func insert(entries: [String : AnyObject], table: String, managedObjectContext: NSManagedObjectContext) throws
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName(table, inManagedObjectContext: managedObjectContext)
@@ -48,9 +65,4 @@ public class ModelProcessor
         managedObjectContext.deleteObject(entity)
     }
 
-    public func test() throws
-    {
-        let exception: ModelProcessorException = ModelProcessorException()
-        exception.raise()        
-    }
 }

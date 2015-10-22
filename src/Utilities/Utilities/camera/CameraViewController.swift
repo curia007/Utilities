@@ -9,15 +9,13 @@
 import UIKit
 import AVFoundation
 
-class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
+public class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 {
     var captureSession:AVCaptureSession?
     var audioPlayer:AVAudioPlayer!
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
 
-    @IBOutlet weak var previewView: UIView!
-    
-    override func viewDidLoad()
+    public override func viewDidLoad()
     {
         super.viewDidLoad()
         
@@ -32,7 +30,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
     }
 
-    override func didReceiveMemoryWarning()
+    public override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -86,8 +84,8 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         // Initialize the video preview layer and add it as a sublayer to the viewPreview view's layer.
         self.videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         self.videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-        self.videoPreviewLayer?.frame = self.previewView.layer.bounds
-        self.previewView.layer.addSublayer(self.videoPreviewLayer!)
+        self.videoPreviewLayer?.frame = self.view.layer.bounds
+        self.view.layer.addSublayer(self.videoPreviewLayer!)
         
         // Start video capture.
         self.captureSession?.startRunning()
@@ -117,7 +115,7 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 
     //MARK: - AVCaptureMetadataOutputObjectsDelegate method implementation
     
-    func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!,
+    public func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!,
         fromConnection connection: AVCaptureConnection!)
     {
 
