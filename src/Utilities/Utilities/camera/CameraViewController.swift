@@ -27,16 +27,52 @@ public class CameraViewController: UIViewController, AVCaptureMetadataOutputObje
             debugPrint("camera is ready")
             self.loadBeepSound()
         }
+        else
+        {
+            debugPrint("camera is not available")
+        }
         
     }
 
+    public override func canPerformUnwindSegueAction(action: Selector, fromViewController: UIViewController, withSender sender: AnyObject) -> Bool
+    {
+        return true
+    }
     public override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    // MARK:  - IBAction methods
     
-    // MARK:  -private methods
+    @IBAction public func prepareUnwindSegue(sender: UIStoryboardSegue)
+    {
+        debugPrint("\(__FUNCTION__)")
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
+    @IBAction func popViewController(sender: AnyObject)
+    {
+        debugPrint("\(__FUNCTION__)")
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override public func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+
+    public override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue?
+    {
+        return nil
+    }
+    
+    // MARK:  - private methods
 
     private func setupCamera() -> Bool
     {
