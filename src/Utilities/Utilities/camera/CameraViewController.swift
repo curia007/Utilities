@@ -58,6 +58,11 @@ public class CameraViewController: UIViewController, AVCaptureMetadataOutputObje
         self.navigationController?.popViewControllerAnimated(true)
     }
 
+    @IBAction func tapGestureAction(sender: AnyObject)
+    {
+        debugPrint("\(__FUNCTION__)")
+    }
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
