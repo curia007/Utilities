@@ -10,6 +10,12 @@ import Foundation
 
 import CoreData
 
+enum ModelProcessorError: ErrorType {
+    case Bad
+    case Worse
+    case DeleteError
+}
+
 public class ModelProcessor
 {
 
@@ -29,7 +35,7 @@ public class ModelProcessor
         return entities
     }
     
-    public func insert(entries: [String : AnyObject], table: String, managedObjectContext: NSManagedObjectContext) throws
+    public func insert(entries: [String : AnyObject], table: String, managedObjectContext: NSManagedObjectContext)
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName(table, inManagedObjectContext: managedObjectContext)
         
@@ -58,8 +64,7 @@ public class ModelProcessor
     {
         if (entity.fault == true)
         {
-            let exception: ModelProcessorException = ModelProcessorException(name: "Fault Exception", reason: "Entity is a fault", userInfo: nil)
-            exception.raise()
+            throw ModelProcessorError.DeleteError
         }
         
         managedObjectContext.deleteObject(entity)
