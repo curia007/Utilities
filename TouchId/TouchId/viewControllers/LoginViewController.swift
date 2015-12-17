@@ -16,14 +16,17 @@ public class LoginViewController: UIViewController
 
     private var willCreateKeychain:Bool = false
 
-    override func viewDidLoad()
+    private var isResetRequested = false
+    private var isAuthenticated = false
+    
+    override public func viewDidLoad()
     {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
         // check to see if keychain exists
-        var results:String? = self.queryKeychain(nil)
+        let results:String? = self.queryKeychain(nil)
         
         if (results == nil)
         {
@@ -32,7 +35,7 @@ public class LoginViewController: UIViewController
 
     }
 
-    override func didReceiveMemoryWarning()
+    override public func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,7 +45,7 @@ public class LoginViewController: UIViewController
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override public func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
@@ -86,13 +89,13 @@ public class LoginViewController: UIViewController
             message = NSLocalizedString("TOUCH_ID_IS_AVAILABLE", comment: "Touch Id is available")
             if (self.isResetRequested == true)
             {
-                debugPrintln("\(__FUNCTION__):  \(message)")
+                debugPrint("\(__FUNCTION__):  \(message)")
             }
         }
         else
         {
             message = NSLocalizedString("TOUCH_ID_IS_NOT_AVAILABLE", comment: "Touch Id is not available")
-            debugPrintln("\(__FUNCTION__):  \(message)")
+            debugPrint("\(__FUNCTION__):  \(message)")
         }
         
         // set text for the localized fallback button
@@ -110,7 +113,7 @@ public class LoginViewController: UIViewController
             else
             {
                 message = NSLocalizedString("EVALUATE_POLICY_WITH_ERROR", comment: "Evaluate policy with error")
-                policyError.localizedDescription
+                policyError!.localizedDescription
                 success = isSuccessful
                 
                 self.isAuthenticated = true
@@ -145,12 +148,12 @@ public class LoginViewController: UIViewController
         
         var objects:NSArray = NSArray(objects:kSecClassGenericPassword, kKeychainService, user, identifier, passwordData)
         var keys:NSArray = NSArray(objects:kSecClass, kSecAttrService, kSecAttrAccount, kSecAttrGeneric, kSecValueData)
-        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject])
+        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject] as [AnyObject])
         
-        debugPrintln(query)
+        debugPrint(query)
         
         let status  = SecItemAdd(query as CFDictionaryRef, nil)
-        debugPrintln("status:  \(status)")
+        debugPrint("status:  \(status)")
     }
     
     private func queryKeychain(user:String!) -> String?
@@ -168,7 +171,7 @@ public class LoginViewController: UIViewController
             keys.addObject(kSecAttrAccount)
         }
         
-        let query = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject])
+        let query = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject] as [AnyObject])
         
         debugPrintln(query)
         
@@ -191,12 +194,12 @@ public class LoginViewController: UIViewController
         var identifier: NSData = kKeychainItemIdentifier.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
         var objects:NSArray = NSArray(objects:kSecClassGenericPassword, kKeychainService, user, identifier)
         var keys:NSArray = NSArray(objects:kSecClass,kSecAttrService, kSecAttrAccount,kSecValueData)
-        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject])
+        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject] as [AnyObject])
         
-        debugPrintln(query)
+        debugPrint(query)
         
         let status = SecItemDelete(query)
-        debugPrintln("status:  \(status)")
+        debugPrint("status:  \(status)")
         
     }
     
@@ -205,12 +208,12 @@ public class LoginViewController: UIViewController
         var identifier: NSData = kKeychainItemIdentifier.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
         var objects:NSArray = NSArray(objects:kSecClassGenericPassword, kKeychainService, identifier)
         var keys:NSArray = NSArray(objects:kSecClass,kSecAttrService,kSecValueData)
-        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject])
+        let query:NSDictionary = NSDictionary(objects: objects as [AnyObject], forKeys: keys as [AnyObject] as [AnyObject])
         
-        debugPrintln(query)
+        debugPrint(query)
         
         let status = SecItemDelete(query)
-        debugPrintln("status:  \(status)")
+        debugPrint("status:  \(status)")
         
     }
 
